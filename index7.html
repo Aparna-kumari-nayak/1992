@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Website</title>
+  <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRl5OoQGcl_xdcl2ufX2-7mLJ_UTP0hogkSCzewhk7Wcg&s" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+  <link rel="stylesheet" href="style7.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <style>
+    body {
+        font-family: Arial, sans-serif;
+        
+        
+      }
+  
+      .section {
+        padding: 50px 0;
+      }
+  
+      .form-container {
+        background-color: rgb(241, 208, 164);
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .form-group label {
+        font-weight: bold;
+      }
+  
+      .form-control {
+        margin-bottom: 20px;
+      }
+  
+      .form-control:focus {
+        border-color: #0e6056;
+        box-shadow: 0 0 5px rgba(12, 120, 120, 0.5);
+      }
+  
+      .btn-primary {
+        background-color: #38a4b5;
+        border-color: #28b0ba;
+      }  
+      .btn-primary:hover {
+        background-color: #18a99f;
+        border-color: #087a64;
+      }
+  
+      .btn-primary:focus {
+        box-shadow: 0 0 0 0.2rem rgba(24, 148, 12, 0.5);
+      }
+      .card {
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+        
+      }
+      
+      .card:hover {
+        box-shadow: 0 4px 8px rgba(238, 141, 141, 0.1);
+      }
+      
+      .card-title {
+        color: #333;
+      }
+      
+      .card-text {
+        color: #666;
+      }
+      
+      .btn-primary {
+        background-color: #1aa99f;
+        border-color: #007bff;
+      }
+      
+      .btn-primary:hover {
+        background-color: #0b9d46;
+        border-color: #0056b3;
+      }
+    
+  </style>
+  
+  </head>
+  
+  <body>
+    <!-- Navbar -->
+   <header>
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-custom animate-animated animate__jello">
+    <div class="container animate__animated animate__heartBeat">
+      <a class="navbar-brand " href="#">APARNA.</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#hero-section">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#feature-section">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#container-pricing">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#service-section">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact-section">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+<main>
+   <!-- Hero Section -->
+   <section class="hero-section">
+    <div class="container animate__animated animate__wobble">
+      <h1>Welcome to our Website</h1>
+      <p>A simple and elegant website template built with HTML, CSS, and Bootstrap.</p>
+      <a href="#" class="btn btn-primary"style=bg color="green">Get Started</a>
+    </div>
+  </section>
+    
+  <!-- Feature Section -->
+  <section class="feature-section">
+    <div class="container animate-animated animate__backInUp">
+      <div class="row">
+        <div class="col-md-4">
+          <i class="fas fa-cog feature-icon"></i>
+          <h3>Easy to Customize</h3>
+          <p>Customize this template easily to fit your needs.</p>
+        </div>
+        <div class="col-md-4">
+          <i class="fas fa-desktop feature-icon"></i>
+          <h3>Responsive Design</h3>
+          <p>Works perfectly on all devices and screen sizes.</p>
+        </div>
+        <div class="col-md-4">
+          <i class="fas fa-code feature-icon"></i>
+          <h3>Well Coded</h3>
+          <p>Clean and well-organized HTML, CSS, and Bootstrap.</p>
+        </div>
+    </div>
+  </div>
+</section>
+<section class="container-Pricing">
+<div class="container  animate__animated animate__backInDown">
+  <h1 class="mt-5 text-center">Our Pricing</h1>
+  <div class="row mt-5">
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Basic</h5>
+          <h6 class="card-subtitle mb-2 text-muted">Starting at $10/month</h6>
+          <p class="card-text">For small teams wanting to try out stack for an unlimited period of time</p>
+          <a href="#" class="btn btn-primary">Select</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Standard</h5>
+          <h6 class="card-subtitle mb-2 text-muted">Starting at $20/month</h6>
+          <p class="card-text">FOR teams and bussiness ready to make stack the hub for their projects and communication</p>
+          <a href="#" class="btn btn-primary">Select</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Premium</h5>
+          <h6 class="card-subtitle mb-2 text-muted">Starting at $30/month</h6>
+          <p class="card-text">For bussiness that need SSO, compliance Exports, and guaranted uptime on a single stack team. </p>
+          <a href="#" class="btn btn-primary">Select</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+<section class="service-section">
+<div class="container mt-5  animate__animated animate__backInLeft">
+  <h1 class="text-center mb-5">Our Services</h1>
+  <div class="row">
+    <div class="col-md-4 mb-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Service 1</h5>
+          <p class="card-text">Description of Service 1.</p>
+          <a href="#" class="btn btn-primary">Learn More</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Service 2</h5>
+          <p class="card-text">Description of Service 2.</p>
+          <a href="#" class="btn btn-primary">Learn More</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Service 3</h5>
+          <p class="card-text">Description of Service 3.</p>
+          <a href="#" class="btn btn-primary">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+ <!--Footer-section-->
+ 
+<footer class="footer-section ">
+  <div class="container  animate-animated animate__fadeInTopRight">
+    <div class="row animate-animated animate__fadeInTopRight">
+      <div class="col-md-6">
+        <p>&copy; 2024 our Website. All rights reserved.</p>
+      </div>
+      <div class="col-md-6">
+        <ul class="list-inline text-md-right">
+          <li class="list-inline-item"><a href="#">Terms of Use</a></li>
+          <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+</div>
+</footer>
+ <!-- Contact Us Section -->
+ <section class="contact-section  animate-animated animate__lightSpeedInRight">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 offset-md-2">
+          <h2>Contact Us</h2>
+          <p>If you have any questions or inquiries, feel free to contact us using the form below.</p>
+          <form>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea class="form-control" id="message" rows="5" placeholder="Enter your message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="welcome" style="background-color: black; font-size: 30px; text-align: center; color: aliceblue;">
+    <div class=" thanku  animate__animated animate__backInDown ">
+    <center><p>Thanku visiting our website</p></center>
+    <center><img src="thanku.jpeg" alt="thanku" height="100%" width="100%"></center>
+    </div>
+</div>
+
+  <!-- Footer -->
+  <!-- Include the same footer as the main page -->
+
+  <!-- Bootstrap JS and Font Awesome -->
+  <!-- Include the same scripts as the main page -->
+</main>
+  </body>
+  </html>
+

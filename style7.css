@@ -1,0 +1,71 @@
+<style>
+    /* Custom CSS */
+    /* Add your custom styles here */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: rgb(228, 198, 155);
+    }
+
+    .navbar-custom {
+      background-color: rgb(7, 130, 130)!important;
+    }
+
+    .navbar-custom .navbar-brand,
+    .navbar-custom .navbar-nav .nav-link {
+      color: #ab6e6e;
+    }
+    .hero-section {
+       height: 100%;
+       display: flex;
+        background-image: url(bootstrap1.jpeg);
+        background-position: center;
+        background-size: cover;
+        color: rgb(7, 130, 130) ;
+        text-align: center;
+        padding: 100px 0;
+        background-color: #ab6e6e;
+      }
+      .hero-section btn btn-primary{
+        background-color: #1f9fb0;
+      }
+  
+      .feature-section {
+        padding: 50px 0;
+        background-color: rgb(7, 130, 130)    }
+  
+      .feature-icon {
+        font-size: 48px;
+        margin-bottom: 20px;
+        color: #ddd;
+        
+      }
+      .service-section {
+        padding: 50px 0;
+        border-color: #1f9fb0;
+        background-color: #1f9fb0;
+      }
+      .container-Pricing{
+        
+        padding: 50px 0;
+        border-color: #1f9fb0;
+        background-color: black;
+        color: #ddd
+      ;
+      }
+      .contact-section{
+        background-color: rgb(7, 130, 130);
+        color: #ddd
+      }
+      .card-body{
+        background-color: ;
+      }
+       
+
+      .footer-section {
+        background-color: #343a40;
+        color: rgb(192, 172, 146);
+        padding: 30px 0;
+      }
+    .footer-section p{
+      color: #ddd;
+    }
