@@ -1,0 +1,229 @@
+:root {
+  --rotateSec: 0deg;
+  --rotateMin: 0deg;
+  --rotateHr: 0deg;
+  --gears-fill: #900;
+  --gears-fill-sm: #d00;
+  --gears-fill-mid: #a00;
+  --crcle-stroke: #f00;
+  --txt-fill: #d90;
+  --txt-crcls: #d02;
+}
+
+*{
+  box-sizing: border-box;
+}
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+body {
+background-color: rgb(48, 48, 3);
+}
+.gears-wrapper {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 4px ridge #bba2;
+  border-radius: 50%;
+  background-color: rgb(71, 71, 3);
+  box-shadow: 0 0 12px 1px #996, 0 0 14px 19px #aa7;
+}
+.clock-bg {
+  position: absolute;
+  width: 98%;
+  height: 98%;
+  margin: 1%;
+  border-radius: 50%;
+  border: 2px ridge #0004;
+  background-image: repeating-conic-gradient(#fffe 0, #fffe 8.05%, #0004 8.3333%);
+}
+.clock-bg-inner {
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  margin: 5%;
+  border-radius: 50%;
+  background-color: #f48e8e;
+  border: 6px double #0004;
+  background-image: 
+  repeating-conic-gradient(#fff, #3302),
+  repeating-conic-gradient(#fff, #2205);
+  background-size: 7% 8.5%, 20% 18%;
+  transform: rotate(30deg);
+  opacity: 1;
+}
+.clock-bg-inner2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0%;
+  border-radius: 50%;
+  background-color: #ca0f0f;
+  border: 1px solid #000;
+  background-image: 
+  repeating-conic-gradient(#fff6, #8804),
+  repeating-conic-gradient(#fff4, #9902);
+  background-size: 7% 8.5%, 20% 18%;
+  transform: rotate(10deg);
+  opacity: 0.4;
+}
+.svg-gears {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.numbers line {
+  stroke: #aa4;
+  stroke-width: 8px;
+  stroke-linecap: butt;
+}
+.pins {
+  fill: 9908;
+}
+.g1, .g2 {transform-origin: 95.8947px 125.3421px;}
+.g3 {transform-origin: 211.7877px 90.299px;}
+.g4, .g5 {transform-origin: 311.7607px 118.9675px;}
+.g6 {transform-origin: 87.8947px 208.3421px;}
+.g7 {transform-origin: 200px 200px;}
+
+.g10 {transform-origin: 99.8947px 275.3421px;}
+
+.g11 {transform-origin: 156.6787px 317.5544px;}
+
+.g12, .g13 {transform-origin: 258.1193px 308.8653px;}
+
+.g1, .g2, .g4, .g5, .g10 {
+  transform: rotate(0deg);
+  animation: gearsRotator 17.5s linear infinite;
+}
+.g3, .g6, .g7, .g11, .g12, .g13 {
+  transform: rotate(0deg);
+  animation: gearsRotator 20s linear infinite;
+}
+.g1, .g2, .g3, .g10, .g12, .g13 {
+  animation-direction: reverse;
+}
+@keyframes gearsRotator {
+  100% {
+      transform: rotate(360deg);
+  }
+}
+
+
+.gears {
+  fill: #eed;
+  stroke: #99a5;
+  stroke-width: 0.42;
+  filter: drop-shadow(2px 2px #9996);
+  filter: sepia(18%);
+}
+
+.g2, .g12 {
+  fill: rgb(217, 217, 155);
+  stroke: #ff0;
+  stroke-width: 0.2;
+}
+.g1, .g4, .ctr-gear-sml, .g10-small {
+  stroke: #880;
+  stroke-width: 0.42;
+  filter: drop-shadow(3px 3px #cca7)
+}
+.g3 {
+  filter: drop-shadow(2px 2px #bb98);
+}
+.g6, .g11 {
+  stroke-width: 0.2;
+  filter: drop-shadow(2px 2px #bb99);
+}
+.g10 {
+  stroke: #b904;
+  stroke-width: 2;
+}
+.g10, .g12, .g13 {
+  filter: sepia(15%);
+}
+.clock-hands {
+  fill: #990;
+  filter: drop-shadow(-4px -4px #bb98);
+  z-index: 1000;
+}
+.g7, .g13 {
+  stroke-width: 0.82;
+}
+.second-hand, 
+.minute-hand, 
+.hour-hand {
+  transform-origin: 200px 200px;
+}    
+.second-hand {transform: rotate(var(--rotateSec));}
+.minute-hand {transform: rotate(var(--rotateMin));}
+.hour-hand {transform: rotate(var(--rotateHr));}
+
+@keyframes test {
+  to {
+      transform: rotate(1turn);
+  }
+}
+
+.pin-click {
+  fill:  rgba(255, 80, 5, 1);
+  stroke-width: 1;
+  stroke: rgba(240, 57, 5, 0.7);
+}
+.clicker {
+  stroke: rgba(250, 85, 50, 1);
+  stroke-width: 1;
+  transform-origin: 80% 50%;
+  transform: rotate(8deg);
+  animation: clicker 1.1s linear infinite;
+}
+@keyframes clicker {
+  80% {
+      transform: rotate(-6deg);
+  }
+}
+.show-date-bg {
+  fill: url(#date-bg);
+  stroke: #ddd;
+  stroke-width: 2px;
+  filter: drop-shadow(-1px -1px 2px #9998) drop-shadow(1px 1px 2px #fff);
+  opacity: 0.9;
+}
+.show-date {
+  font-size: 1rem;
+  font-family: Sans-Serif;
+  white-space: nowrap;
+  fill: rgb(38, 38, 5);
+}
+.show-date-fg {
+  fill: url(#date-fg);
+  stroke: #ddd;
+  stroke-width: 2px;
+  filter: drop-shadow(-2px -2px 2px #9998) drop-shadow(2px 2px 2px #fff);
+  opacity: 0.9;
+}
+.tint {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 1px solid #999;
+  background-color: #00f0;
+  --clr1: #fff8;
+  --clr2: #dd03;
+  background-image: 
+  linear-gradient(154deg, transparent 32.9%, var(--clr2), transparent 50.5%),
+  linear-gradient(153deg, transparent 42.9%, var(--clr1), transparent 50.5%),
+  linear-gradient(-25deg, transparent 42.9%, var(--clr1), transparent 50.5%),
+  linear-gradient(-27deg, transparent 42.9%, var(--clr1), transparent 50.2%);
+  background-size: 35% 135%, 160% 30%, 100% 30%, 160% 115%;
+  background-repeat: no-repeat;
+  box-shadow: inset 0 0 26px 8px #fff;
+}
